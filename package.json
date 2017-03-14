@@ -1,0 +1,35 @@
+{
+  "name": "fusion-travel-agency-html",
+  "version": "1.0.0",
+  "description": "Design PSD Credit by Ishtiaq Khan Parag https://dribbble.com/shots/3060963-Fusion-Travel-Agency",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarryLaly/Fusion-Travel-Agency-HTML.git"
+  },
+  "keywords": [
+    "Travel",
+    "Design",
+    "Travel",
+    "Web",
+    "Freebies",
+    "PSD",
+    "Freebies",
+    "HTML"
+  ],
+  "author": "Garry Priambudi <garrylaly@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GarryLaly/Fusion-Travel-Agency-HTML/issues"
+  },
+  "homepage": "https://github.com/GarryLaly/Fusion-Travel-Agency-HTML#readme"
+}
