@@ -1,0 +1,30 @@
+@mixin transition
+	transition: all 0.5s
+	-moz-transition: all 0.5s
+	-ms-transition: all 0.5s
+	-webkit-transition: all 0.5s
+	-o-transition: all 0.5s
+
+@mixin border-radius($round)
+	border-radius: $round
+	-webkit-border-radius: $round
+	-moz-border-radius: $round
+	-o-border-radius: $round
+
+@mixin transform($x, $y)
+	-webkit-transform: translate($x, $y)
+	   -moz-transform: translate($x, $y)
+	    -ms-transform: translate($x, $y)
+	     -o-transform: translate($x, $y)
+	        transform: translate($x, $y)
+
+@mixin div-center($max-width)
+	margin: 0 auto
+	max-width: $max-width
+
+@mixin fullscreen($top, $left)
+	height: 100%
+	position: absolute
+	top: $top
+	left: $left
+	width: 100%

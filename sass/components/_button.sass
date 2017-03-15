@@ -1,1 +1,35 @@
 .Button
+  background: #ccc
+  color: #333
+  display: inline-block
+  padding: 10px 30px
+  @include transition()
+  @include border-radius(50px)
+
+  &:focus,
+  &:active,
+  &:hover
+    text-decoration: none
+    opacity: 0.9
+
+  &--fill
+    background-color: inherit
+    border-color: transparent !important
+
+  &--stroke
+    background-color: transparent !important
+    border-color: inherit !important
+
+  &--orange,
+  &--orange:hover,
+  &--orange:focus
+    background: #d35400
+    border: 2px solid #d35400
+    color: #fff
+
+  &--white,
+  &--white:hover,
+  &--white:focus
+    background: #fff
+    border: 2px solid #fff
+    color: #fff
