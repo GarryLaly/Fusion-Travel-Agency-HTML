@@ -4,45 +4,8 @@
 
   &-content
 
-    .slick-list
-      padding: 0 0 70px !important
-
-    .slick-dots
-
-      li
-
-        &.slick-active
-          height: 25px
-          width: 25px
-
-          button
-            border: 1px solid $colorPrimary
-            @include border-radius(50%)
-            height: 25px
-            width: 25px
-
-            &:before
-              color: $colorPrimary !important
-              font-size: 16px !important
-              top: 3px
-              left: 3px
-              opacity: 1 !important
-              line-height: 20px !important
-              width: 19px !important
-
-        button
-          border: 1px solid #aaa
-          @include border-radius(50%)
-
-          &:before
-            font-size: 10px !important
-            opacity: 1 !important
-            color: $colorSecond !important
-            line-height: 21px !important
-            height: 18px
-            width: 20px
-
     &-item
+      background: #fff
       -webkit-box-shadow: 0px 5px 39px 0px rgba(0, 0, 0, 0.02)
       -moz-box-shadow:    0px 5px 39px 0px rgba(0, 0, 0, 0.02)
       box-shadow:         0px 5px 39px 0px rgba(0, 0, 0, 0.02)
@@ -52,11 +15,6 @@
 
       &:focus
         outline: 0
-
-      &.slick-center
-        -webkit-box-shadow: 0px 5px 59px 0px rgba(0, 0, 0, 0.05)
-        -moz-box-shadow:    0px 5px 59px 0px rgba(0, 0, 0, 0.05)
-        box-shadow:         0px 5px 59px 0px rgba(0, 0, 0, 0.05)
 
       &-icon
 

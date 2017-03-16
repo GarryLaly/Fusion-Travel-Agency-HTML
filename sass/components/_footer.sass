@@ -1,1 +1,61 @@
 .FooterBox
+
+  &-content
+    padding: 150px 0 60px
+
+    &-item
+
+      &-title
+        margin-bottom: 25px
+
+        h4
+          color: $colorTextHeading
+          font-size: 20px
+
+      &-data
+        color: $colorTextParagraphSecond
+
+        &-socmed
+
+          li
+            display: inline-block
+            margin: 0 3px
+
+            &:first-child
+
+              a
+                padding: 15px 17px 12px
+                margin-left: 0
+
+            a
+              background: $colorTextParagraphSecond
+              @include border-radius(50%)
+              padding: 15px 15px 12px
+              @include transition()
+
+              &:hover,
+              &:focus
+                background: $colorPrimary
+
+              i
+                font-size: 18px
+                color: #fff
+
+        ul
+          list-style: none
+          padding: 0
+          margin: 0
+
+          li
+
+            a
+              color: $colorTextParagraphSecond
+
+  &-copyright
+    border-top: 1px solid #e4e4e4
+    padding: 40px 0
+    text-align: center
+
+    span
+      color: $colorTextParagraphSecond
+      font-size: 14px
