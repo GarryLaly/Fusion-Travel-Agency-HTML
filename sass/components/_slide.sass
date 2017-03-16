@@ -4,26 +4,50 @@
 
   &-content
     text-align: center
-    padding: 180px
+    padding: 230px 20px
+
+    &-title
+
+      h3
+        font-size: 72px
+        font-weight: bold
+
+    &-description
+      margin-bottom: 25px
+
+      p
+        font-size: 20px
+
+    &-button
 
   &-play
-    padding: 30px
+    cursor: pointer
+    position: absolute
+    bottom: 50px
+    left: 30px
 
     &-icon
+      border: 2px solid #fff
+      @include border-radius(50%)
       float: left
+      padding: 10px 12px 10px 17px
 
       i
         font-size: 24px
 
     &-content
-      margin-left: 32px
+      margin-top: 3px
+      margin-left: 63px
 
       &-title
 
         p
+          font-size: 14px
           margin: 0
 
       &-subtitle
 
         p
+          font-size: 18px
+          font-weight: bold
           margin: 0

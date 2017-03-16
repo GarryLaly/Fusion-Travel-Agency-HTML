@@ -1,1 +1,53 @@
 .DestinationBox
+
+  &-grid
+
+    .slick-prev,
+    .slick-next
+
+      &:before
+        font: normal normal normal 14px/1 'FontAwesome'
+        color: $colorPrimary
+        font-size: 24px
+
+    .slick-prev
+      left: -50px
+
+      &:before
+        content: "\f060"
+
+    .slick-next
+      right: -50px
+
+      &:before
+        content: "\f061"
+
+    .slick-slide
+
+      &:focus
+        outline: 0
+
+    &-item
+
+      &:hover,
+      &:focus
+
+        .DestinationBox-grid-item-image-title
+          opacity: 1
+
+      &-image
+        cursor: pointer
+        position: relative
+        margin: 15px
+        overflow: hidden
+
+        &-title
+          color: #fff
+          background: rgba(0,0,0,0.8)
+          position: absolute
+          padding: 30px
+          text-align: center
+          opacity: 0
+          height: 100%
+          @include transition
+          width: 100%

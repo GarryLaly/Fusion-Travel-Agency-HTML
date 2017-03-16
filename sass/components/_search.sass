@@ -1,0 +1,41 @@
+.SearchBox
+  margin: 50px 0
+
+  &-content
+    max-width: 160px
+    margin: 0 auto
+    overflow: hidden
+
+    &-icon
+      float: left
+      margin: 5px 0 0
+
+      i
+        color: $colorTextHeading
+        font-size: 24px
+
+    &-input
+      float: left
+      margin: 0 0 0 15px
+
+      input
+        border: 0
+        color: $colorTextHeading
+        font-size: 24px
+        max-width: 120px
+
+        &:focus
+          outline: 0
+
+        /* do not group these rules */
+        &::-webkit-input-placeholder
+            color: $colorTextHeading
+        &:-moz-placeholder
+            /* FF 4-18 */
+            color: $colorTextHeading
+        &::-moz-placeholder
+            /* FF 19+ */
+            color: $colorTextHeading
+        &:-ms-input-placeholder
+            /* IE 10+ */
+            color: $colorTextHeading
