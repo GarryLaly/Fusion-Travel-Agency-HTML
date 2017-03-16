@@ -19,5 +19,6 @@ Credit Plugins:
  - [Slick 1.6.0](https://github.com/kenwheeler/slick/archive/1.6.0.zip)
 
 Contact me to discussion some project or collaboration,
-Email: [garrylaly@gmail.com](mailto:garrylaly@gmail.com)
-Facebook: [Garry Priambudi](https://www.facebook.com/garrylaly12)
+
+ Email: [garrylaly@gmail.com](mailto:garrylaly@gmail.com)
+ Facebook: [Garry Priambudi](https://www.facebook.com/garrylaly12)
