@@ -5,8 +5,6 @@
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fusion Travel Agency</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/build.css">
   </head>
   <body>
     <nav class="navbar navbar-default NavbarBox">
@@ -655,10 +653,27 @@
       </div>
     </div>
 
+    <noscript id="deferred-styles">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="css/build.css">
+    </noscript>
     <script type="text/javascript" src="vendors/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="vendors/slick/slick.min.js"></script>
     <script type="text/javascript" src="vendors/masonry/masonry.pkgd.min.js"></script>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.SliderCardBox .SliderCardBox-content').slick({
