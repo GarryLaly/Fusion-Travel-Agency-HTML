@@ -2,6 +2,7 @@
   max-width: 700px
   margin: 0 auto
   padding: 0 0 180px
+  overflow: hidden
 
   &-slide
 
@@ -25,20 +26,38 @@
         max-width: 150px
         overflow: hidden
 
+        @media screen and (max-width: 600px)
+          float: none
+          margin: 0 auto 20px
+
       &-content
         margin-left: 150px
         padding: 0 0 0 40px
+
+        @media screen and (max-width: 600px)
+          margin-left: 0
+          padding: 0
 
         &-description
 
           p
             color: $colorTextParagraphSecond
             text-align: justify
+            margin-bottom: 50px
+
+            @media screen and (max-width: 600px)
+              margin-bottom: 20px
 
         &-author
           position: absolute
           bottom: 25px
           left: 220px
+
+          @media screen and (max-width: 600px)
+            position: static
+            bottom: 0
+            left: 0
+            text-align: center
 
           &-name
             color: $colorPrimary

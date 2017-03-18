@@ -562,12 +562,12 @@
       <div class="container">
         <div class="SectionBox-highlight">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-xs-12">
               <div class="SectionBox-highlight-text">
                 <p>Get special discount on your first journey</p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
               <div class="SectionBox-highlight-button">
                 <a href="#" class="Button Button--stroke Button--white">Book Now</a>
               </div>
@@ -581,7 +581,7 @@
       <div class="container">
         <div class="FooterBox-content">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="FooterBox-content-item">
                 <div class="FooterBox-content-item-title">
                   <h4>About Us</h4>
@@ -601,7 +601,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="FooterBox-content-item">
                 <div class="FooterBox-content-item-title">
                   <h4>Address</h4>
@@ -612,7 +612,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="FooterBox-content-item">
                 <div class="FooterBox-content-item-title">
                   <h4>Contact Us</h4>
@@ -623,7 +623,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="FooterBox-content-item">
                 <div class="FooterBox-content-item-title">
                   <h4>Follow Us</h4>
@@ -670,20 +670,14 @@
           slidesToShow: 3,
           responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 991,
               settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 3
+                slidesToShow: 2
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 600,
               settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '0px',
                 slidesToShow: 1
               }
             }
@@ -694,6 +688,20 @@
           arrows: true,
           slidesPerRow: 3,
           rows: 2,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesPerRow: 2
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesPerRow: 1
+              }
+            }
+          ]
         });
 
         $('.BlogBox-grid').masonry({

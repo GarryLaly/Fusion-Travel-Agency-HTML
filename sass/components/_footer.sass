@@ -1,9 +1,17 @@
 .FooterBox
 
   &-content
-    padding: 150px 0 60px
+    padding: 150px 20px 60px
 
     &-item
+
+      @media screen and (max-width: 991px)
+        min-height: 115px
+
+      @media screen and (max-width: 767px)
+        text-align: center
+        min-height: 100%
+        margin-bottom: 20px
 
       &-title
         margin-bottom: 25px

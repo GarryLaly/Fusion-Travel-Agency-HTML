@@ -1,3 +1,15 @@
+.navbar-collapse.collapse.in
+  background: rgba(0,0,0,0.8)
+
+.navbar-toggle.collapsed
+  @include transition()
+
+  &:hover
+    background: $colorPrimary
+
+  .icon-bar
+    background: #fff
+
 .slick-center
   -webkit-box-shadow: 0px 5px 59px 0px rgba(0, 0, 0, 0.05)
   -moz-box-shadow:    0px 5px 59px 0px rgba(0, 0, 0, 0.05)

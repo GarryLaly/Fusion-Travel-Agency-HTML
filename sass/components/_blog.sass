@@ -1,5 +1,13 @@
 .BlogBox
 
+  @media screen and (max-width: 991px)
+    margin: 0 auto
+    width: 540px
+
+  @media screen and (max-width: 580px)
+    margin: 0 auto
+    width: 260px
+
   &-grid
 
     &-item
@@ -15,6 +23,12 @@
 
       &--large
         width: 555px
+
+        @media screen and (max-width: 991px)
+          width: 530px
+
+        @media screen and (max-width: 580px)
+          width: 260px
 
       &--vertical
 
@@ -41,15 +55,24 @@
         max-height: 173px
         overflow: hidden
 
+        @media screen and (max-width: 580px)
+          max-height: 100%
+
         .BlogBox-grid-item
 
           &-image
             float: right
             max-width: 260px
 
+            @media screen and (max-width: 580px)
+              float: none
+
           &-content
             padding: 20px 30px
             margin-right: 260px
+
+            @media screen and (max-width: 580px)
+              margin-right: 0
 
             &-title
 
